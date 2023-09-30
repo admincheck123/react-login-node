@@ -131,7 +131,7 @@ export default function Products() {
       dataIndex: 'name',
       key: 'name',
       render: function (text, record) {
-        return <Link to={`/products/${record._id}`}>{text}</Link>;
+        return <Link>{text}</Link>;
         // return <Link to={`${record._id}`}>{text}</Link>;
       },
     },
