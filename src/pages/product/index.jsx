@@ -198,29 +198,29 @@ export default function Products() {
       dataIndex: 'description',
     },
     {
-      title: 'Hành động',
-      key: 'actions',
-      width: '1%',
-      render: (text, record, index) => {
-        return (
-          <Space>
-            <Button
-              type="dashed"
-              icon={<EditOutlined />}
-              onClick={onSelectProduct(record)}
-            />
+      // title: 'Hành động',
+      // key: 'actions',
+      // width: '1%',
+      // render: (text, record, index) => {
+      //   return (
+      //     <Space>
+      //       <Button
+      //         type="dashed"
+      //         icon={<EditOutlined />}
+      //         onClick={onSelectProduct(record)}
+      //       />
 
-            <Popconfirm
-              title="Mày chắc muốn xóa không"
-              okText="Đồng ý"
-              cancelText="Hủy"
-              onConfirm={onDeleteProduct(record._id)}
-            >
-              <Button danger type="dashed" icon={<DeleteOutlined />} />
-            </Popconfirm>
-          </Space>
-        );
-      },
+      //       <Popconfirm
+      //         title="Mày chắc muốn xóa không"
+      //         okText="Đồng ý"
+      //         cancelText="Hủy"
+      //         onConfirm={onDeleteProduct(record._id)}
+      //       >
+      //         <Button danger type="dashed" icon={<DeleteOutlined />} />
+      //       </Popconfirm>
+      //     </Space>
+      //   );
+      // },
     },
   ];
 
